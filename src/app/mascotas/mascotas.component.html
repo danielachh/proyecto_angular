@@ -1,0 +1,24 @@
+<mat-table [dataSource]="dataSource" mat-sort>
+  <ng-container matColumnDef="Accion"  >
+    <mat-header-cell *matHeaderCellDef > Action </mat-header-cell>
+    <mat-cell *matCellDef="let element" >
+     
+      
+    </mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="nombre">
+    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+    <mat-cell *matCellDef="let taque"> {{taque.nombre}} </mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="id">
+    <mat-header-cell *matHeaderCellDef> Precio </mat-header-cell>
+    <mat-cell *matCellDef="let taque"> {{taque.id}} </mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="edad">
+    <mat-header-cell *matHeaderCellDef> Calidad </mat-header-cell>
+    <mat-cell *matCellDef="let taque"> {{taque.edad}} </mat-cell>
+  </ng-container>
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+</mat-table>
