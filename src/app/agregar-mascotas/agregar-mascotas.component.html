@@ -1,4 +1,4 @@
-<mat-card>
+<!--<mat-card>
 
   <h1>Agregar producto</h1>
 
@@ -20,12 +20,40 @@
   <input accept="image/png,image/jpeg" #foto required id="fotos" multiple type="file">
 
   <p>
-      <!-- Boton de guardar 
+      Boton de guardar 
       <app-loading-button [cargando]="cargando"
       texto="Guardar" (click)="guardar()"></app-loading-button>
       <a routerLink="/productos" mat-raised-button color="primary" style="margin-left: 10px;">
       Volver
-      </a>-->
+      </a>
   </p>
 
-</mat-card>
+</mat-card>-->
+<div class="contenedor">
+    <div>
+  
+    <h1>Registrar</h1>
+       <mat-form-field appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Nombre">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="legacy">
+        <mat-label>Mat Label Example</mat-label>
+        <input matInput placeholder="Apellido Paterno">
+  
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="legacy">
+        <mat-label>Mat Label Example</mat-label>
+        <input matInput placeholder="Apellido Materno">
+      </mat-form-field>
+    </div>
+      <mat-form-field appearance="legacy">
+        <mat-label>Mat Label Example</mat-label>
+        <input matInput placeholder="Contraseña">
+      </mat-form-field>
+    <button mat-button>Registrarse</button>
+    </div>
