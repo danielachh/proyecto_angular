@@ -12,12 +12,13 @@ export class AppComponent {
   title = 'proyecto_angular';
   dataSource!: MatTableDataSource<Mascotas>;
 
+
   constructor(private router:Router,private mascotasServicio:MascotasService){
   }
   public mascotas: Mascotas[]=[];
   displayedColumns: string[] = ['id','nombre','edad'];
- 
-  
+
+
 
 }
 

@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatTableModule} from '@angular/material/table';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import {MatIconModule} from '@angular/material/icon'; 
+import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {FormsModule} from "@angular/forms";
 import {MatBadgeModule} from "@angular/material/badge";
@@ -22,6 +22,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatRadioModule} from '@angular/material/radio';
 
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
@@ -41,7 +42,9 @@ import {MatSliderModule} from '@angular/material/slider';
 //componentes
 import { MascotasComponent } from './mascotas/mascotas.component';
 import { AgregarMascotasComponent } from './agregar-mascotas/agregar-mascotas.component';
-import { LoaddingButtonComponent } from './loadding-button/loadding-button.component'
+import { LoaddingButtonComponent } from './loadding-button/loadding-button.component';
+import { LoginComponent } from './login/login.component';
+import { AdopcionesComponent } from './adopciones/adopciones.component'
 
 @NgModule({
   declarations: [
@@ -49,7 +52,9 @@ import { LoaddingButtonComponent } from './loadding-button/loadding-button.compo
     ToolbarComponent,
     MascotasComponent,
     AgregarMascotasComponent,
-    LoaddingButtonComponent
+    LoaddingButtonComponent,
+    LoginComponent,
+    AdopcionesComponent
   ],
   imports: [
     BrowserModule,
@@ -76,7 +81,8 @@ import { LoaddingButtonComponent } from './loadding-button/loadding-button.compo
     MatGridListModule,
     MatChipsModule,
     MatStepperModule,
-    MatSliderModule
+    MatSliderModule,
+    MatRadioModule
   ],
   exports:[
     MatTableModule,

@@ -17,19 +17,11 @@
 .contenido_card{
   align-items: center;
   align-content: center;
-
 }
 .titulo{
   font-size: xx-large;
 }
 
-.field{
-  margin: 6px;
-}
-
-.radio{
-  margin-left: 16px;
-}
 span{
   font-size: 100px;
 }

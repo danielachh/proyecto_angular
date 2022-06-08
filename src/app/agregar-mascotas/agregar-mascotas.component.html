@@ -1,59 +1,52 @@
-<!--<mat-card>
+<div class="contenedorLogin">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title class="titulo">Registro de animales</mat-card-title>
+    </mat-card-header>
 
-  <h1>Agregar producto</h1>
+    <form>
+      <mat-card-content class="contenido_card">
+        <mat-form-field appearance="outline" class="field">
+          <mat-label>Nombre</mat-label>
+          <input matInput>
+        </mat-form-field>
 
-  <p>
-      <mat-form-field>
-          <input matInput [(ngModel)]="mascotas.nombre" type="text"
-          placeholder="Escriba nombre">
-      </mat-form-field>
-  </p>
-  <p>
-      <mat-form-field>
-          <textarea row="10" matInput [(ngModel)]="mascotas.edad" 
-          placeholder="Escriba descripcion"></textarea>
-      </mat-form-field>
-  </p>
-  <label for="fotos">Fotos</label>
+        <mat-form-field appearance="outline" class="field">
+          <mat-label>Raza</mat-label>
+          <input matInput>
+        </mat-form-field>
 
-  <br>
-  <input accept="image/png,image/jpeg" #foto required id="fotos" multiple type="file">
+        <mat-form-field appearance="outline" class="field">
+          <mat-label>Edad</mat-label>
+          <input matInput>
+        </mat-form-field><br>
 
-  <p>
-      Boton de guardar 
-      <app-loading-button [cargando]="cargando"
-      texto="Guardar" (click)="guardar()"></app-loading-button>
-      <a routerLink="/productos" mat-raised-button color="primary" style="margin-left: 10px;">
-      Volver
-      </a>
-  </p>
+        <mat-form-field appearance="outline" class="field">
+          <mat-label>Color</mat-label>
+          <input matInput>
+        </mat-form-field>
 
-</mat-card>-->
-<div class="contenedor">
-    <div>
-  
-    <h1>Registrar</h1>
-       <mat-form-field appearance="fill">
-        <mat-label>Nombre</mat-label>
-        <input matInput placeholder="Nombre">
-      </mat-form-field>
-    </div>
-    <div>
-      <mat-form-field appearance="legacy">
-        <mat-label>Mat Label Example</mat-label>
-        <input matInput placeholder="Apellido Paterno">
-  
-      </mat-form-field>
-    </div>
-    <div>
-      <mat-form-field appearance="legacy">
-        <mat-label>Mat Label Example</mat-label>
-        <input matInput placeholder="Apellido Materno">
-      </mat-form-field>
-    </div>
-      <mat-form-field appearance="legacy">
-        <mat-label>Mat Label Example</mat-label>
-        <input matInput placeholder="Contraseña">
-      </mat-form-field>
-    <button mat-button>Registrarse</button>
-    </div>
+        <mat-form-field appearance="outline" class="field">
+          <mat-label>Peso(kgs)</mat-label>
+          <input matInput>
+        </mat-form-field><br>
+
+        <mat-radio-group aria-label="Sexo" >
+          <mat-radio-button value="1">Macho</mat-radio-button>
+          <mat-radio-button value="2" class="radio">Hembra</mat-radio-button>
+        </mat-radio-group><br>
+
+        <mat-form-field appearance="outline" class="field">
+          <mat-label>Estado</mat-label>
+          <input matInput aria-disabled="true" readonly value="Disponible">
+        </mat-form-field><br>
+
+      </mat-card-content>
+
+      <button mat-raised-button>Registrar</button>
+
+    </form>
+  </mat-card>
+</div>
+
+
